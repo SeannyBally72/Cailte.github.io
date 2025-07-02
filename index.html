@@ -10,20 +10,28 @@
 </head>
 <body>
 
-  <!-- 🎥 Hero Section with Forest Video -->
+  <!-- 🎥 Hero Section -->
   <section class="hero">
     <video autoplay muted loop class="hero-video">
       <source src="forest.mp4" type="video/mp4" />
     </video>
+
     <div class="hero-overlay">
-      <!-- 🧭 Top Navigation Icon -->
-      <div class="nav-icon">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+      <!-- 🧭 Navigation Icon and Dropdown -->
+      <div class="nav-wrapper">
+        <div class="nav-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div id="dropdown-menu" class="dropdown-menu">
+          <a href="#">About</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="#">Settings</a>
+        </div>
       </div>
 
-      <!-- 🌲 Logo and Branding -->
+      <!-- 🌲 Branding -->
       <div class="logo-left">
         <img src="logo.png.png" alt="Cailte Logo" class="logo" />
       </div>
@@ -55,6 +63,14 @@
   <footer>
     <p>&copy; 2025 Cailte. All rights reserved.</p>
   </footer>
+
+  <!-- Dropdown Menu Script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("dropdown-menu");
+      menu.classList.toggle("show");
+    }
+  </script>
 
 </body>
 </html>
