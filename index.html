@@ -12,11 +12,12 @@
 
   <!-- 🎥 HERO SECTION -->
   <section class="hero">
-    <video autoplay muted loop class="hero-video">
+    <video autoplay muted loop playsinline class="hero-video">
       <source src="forest.mp4" type="video/mp4" />
     </video>
     <div class="hero-overlay">
-      <!-- 🧭 NAVIGATION -->
+
+      <!-- 🧭 NAV MENU -->
       <div class="nav-wrapper">
         <div class="nav-icon" onclick="toggleMenu()">
           <div class="bar"></div>
@@ -30,7 +31,7 @@
         </div>
       </div>
 
-      <!-- 🌲 LOGO & TITLE -->
+      <!-- 🌲 LOGO & BRANDING -->
       <div class="logo-left">
         <img src="logo.png.png" alt="Cailte Logo" class="logo" />
       </div>
@@ -41,17 +42,17 @@
 
   <!-- 🌿 MAIN SECTIONS -->
   <main>
-    <section class="intro card">
+    <section class="card">
       <h2>Welcome to the Celtic Forest Radar System</h2>
       <p class="body-text">We blend environmental signals with artificial intelligence to reveal ancient movement patterns and natural anomalies hidden beneath the forest canopy.</p>
     </section>
 
-    <section class="dashboard card">
+    <section class="card">
       <h2>Live Data Preview</h2>
       <p class="body-text">Our interactive dashboard is under development. Stay tuned as we merge deep ecological memory with modern sensing systems.</p>
     </section>
 
-    <section class="dashboard-feature card">
+    <section class="card">
       <h2>Explore the Live Dashboard</h2>
       <p class="body-text">Real-time intelligence from the forest awaits—tracking animal patterns, terrain anomalies, and shifting ecological signals.</p>
       <a href="dashboard.html" class="dashboard-button">View Dashboard</a>
@@ -63,11 +64,9 @@
     <p>&copy; 2025 Cailte. All rights reserved.</p>
   </footer>
 
-  <!-- 📜 DROPDOWN SCRIPT -->
   <script>
     function toggleMenu() {
-      const menu = document.getElementById("dropdown-menu");
-      menu.classList.toggle("show");
+      document.getElementById("dropdown-menu").classList.toggle("show");
     }
   </script>
 
