@@ -12,12 +12,12 @@ body {
   text-align: center;
 }
 
-/* 🎥 VIDEO BACKGROUND */
+/* 🎥 HERO SECTION */
 .hero {
   position: relative;
   height: 60vh;
-  background-color: var(--forest-dark);
   overflow: hidden;
+  background-color: var(--forest-dark);
 }
 
 .hero-video {
@@ -28,16 +28,17 @@ body {
   height: 100%;
   object-fit: cover;
   opacity: 0.25;
-  z-index: -1;
+  z-index: 0;
 }
 
 .hero-overlay {
   position: relative;
+  z-index: 1;
   background-color: rgba(12, 25, 18, 0.65);
   padding: 2.5rem 1rem;
 }
 
-/* 🧭 HAMBURGER & MENU */
+/* 🧭 NAVIGATION */
 .nav-wrapper {
   position: absolute;
   top: 1rem;
@@ -96,7 +97,7 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* 🌲 LOGO */
+/* 🌲 LOGO + TITLE */
 .logo-left {
   position: absolute;
   top: 1rem;
@@ -110,7 +111,6 @@ body {
   box-shadow: 0 0 12px rgba(186, 150, 83, 0.5);
 }
 
-/* 🔠 TITLE */
 .site-title {
   font-family: 'Inter', sans-serif;
   font-size: 3rem;
@@ -128,7 +128,7 @@ body {
   padding-top: 0.5rem;
 }
 
-/* 📦 CARDS */
+/* 📦 CARD SECTIONS */
 .card {
   background-color: rgba(12, 25, 18, 0.85);
   border: 1px solid var(--celtic-gold);
