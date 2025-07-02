@@ -2,12 +2,13 @@
   --celtic-gold: #BA9653;
   --forest-dark: #0c1912;
   --forest-soft: #142d1c;
+  --text-muted: #a8a28f;
 }
 
 body {
   margin: 0;
   background-color: var(--forest-dark);
-  color: #ccc;
+  color: var(--text-muted);
   font-family: 'Merriweather', serif;
   text-align: center;
 }
@@ -120,7 +121,7 @@ body {
 
 .tagline {
   font-style: italic;
-  color: #a8a28f;
+  color: var(--text-muted);
   font-size: 1rem;
   max-width: 600px;
   margin: 0 auto;
@@ -151,11 +152,11 @@ h2 {
 }
 
 .body-text {
-  color: #d3d3d3;
+  color: var(--text-muted);
   font-size: 1.05rem;
 }
 
-/* 📊 DASHBOARD BUTTON */
+/* 📊 BUTTON */
 .dashboard-button {
   display: inline-block;
   margin-top: 1rem;
@@ -176,7 +177,7 @@ h2 {
   transform: scale(1.05);
 }
 
-/* 🕯️ Base Footer */
+/* 🕯️ BASE FOOTER */
 footer {
   padding: 1rem;
   background-color: rgba(12, 25, 18, 0.85);
@@ -184,12 +185,13 @@ footer {
   border-top: 2px solid var(--celtic-gold);
 }
 
-/* 🌐 Extended Footer – Refined Styling */
+/* 🌐 EXTENDED FOOTER – Refined Styling */
 .extended-footer {
   background: linear-gradient(to right, #0c1912, #142d1c);
-  color: #ccc;
+  color: var(--text-muted);
   padding: 3rem 1rem 2rem;
   border-top: 2px solid var(--celtic-gold);
+  font-family: 'Inter', sans-serif;
 }
 
 .footer-grid {
@@ -203,16 +205,16 @@ footer {
 
 .footer-column h3 {
   color: var(--celtic-gold);
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
-  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
 .footer-column p,
 .footer-column ul {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   line-height: 1.6;
-  color: #d3d3d3;
+  color: var(--text-muted);
 }
 
 .footer-column ul {
@@ -222,17 +224,17 @@ footer {
 }
 
 .footer-column ul li {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .footer-column ul li a {
-  color: var(--celtic-gold);
+  color: var(--text-muted);
   text-decoration: none;
 }
 
 .footer-column ul li a:hover {
   text-decoration: underline;
-  color: #a8843d;
+  color: var(--celtic-gold);
 }
 
 .footer-column form {
@@ -246,8 +248,7 @@ footer {
   border-radius: 6px;
   margin-bottom: 0.5rem;
   background-color: #1e2e24;
-  color: #ccc;
-  font-family: 'Inter', sans-serif;
+  color: var(--text-muted);
   font-size: 0.9rem;
 }
 
@@ -257,8 +258,7 @@ footer {
   color: var(--forest-dark);
   border: none;
   border-radius: 6px;
-  font-weight: bold;
-  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   font-size: 0.9rem;
   cursor: pointer;
   box-shadow: 0 0 6px rgba(186, 150, 83, 0.3);
@@ -274,5 +274,4 @@ footer {
   margin-top: 2rem;
   font-size: 0.85rem;
   color: #888;
-  font-family: 'Inter', sans-serif;
 }
