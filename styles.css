@@ -1,9 +1,23 @@
-/* 🎥 Hero Section */
+:root {
+  --celtic-gold: #BA9653;
+  --dark-green: #0c1912;
+  --soft-green: #142d1c;
+}
+
+body {
+  margin: 0;
+  background-color: var(--dark-green);
+  color: #ccc;
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+}
+
+/* 🎥 Hero */
 .hero {
   position: relative;
   height: 60vh;
+  background-color: var(--dark-green);
   overflow: hidden;
-  background-color: #0c1912;
 }
 
 .hero-video {
@@ -20,11 +34,11 @@
 .hero-overlay {
   position: relative;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1rem;
   background: rgba(12, 25, 18, 0.65);
 }
 
-/* 🧭 Navigation Dropdown */
+/* 🧭 Menu Icon & Dropdown */
 .nav-wrapper {
   position: absolute;
   top: 1rem;
@@ -33,20 +47,19 @@
 
 .nav-icon {
   cursor: pointer;
-  z-index: 10;
 }
 
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #d4af37;
+  background-color: var(--celtic-gold);
   margin: 4px 0;
   border-radius: 2px;
   transition: background 0.3s ease;
 }
 
 .nav-icon:hover .bar {
-  background-color: #c4b781;
+  background-color: #a8843d;
 }
 
 .dropdown-menu {
@@ -54,13 +67,17 @@
   flex-direction: column;
   margin-top: 8px;
   background-color: rgba(12, 25, 18, 0.95);
-  border: 1px solid #c4b781;
+  border: 1px solid var(--celtic-gold);
   border-radius: 8px;
   padding: 0.5rem;
 }
 
+.dropdown-menu.show {
+  display: flex;
+}
+
 .dropdown-menu a {
-  color: #d4af37;
+  color: var(--celtic-gold);
   text-decoration: none;
   padding: 0.5rem;
   font-family: 'Inter', sans-serif;
@@ -68,14 +85,10 @@
 }
 
 .dropdown-menu a:hover {
-  background-color: #142d1c;
+  background-color: var(--soft-green);
 }
 
-.dropdown-menu.show {
-  display: flex;
-}
-
-/* 🌲 Logo Styling */
+/* 🌲 Logo */
 .logo-left {
   position: absolute;
   top: 1rem;
@@ -86,16 +99,16 @@
   height: 65px;
   border-radius: 12px;
   object-fit: cover;
-  box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+  box-shadow: 0 0 12px rgba(186, 150, 83, 0.5);
 }
 
-/* 🔠 Site Title */
+/* 🌟 Branding */
 .site-title {
   font-family: 'Inter', sans-serif;
   font-size: 3.2rem;
-  color: #d4af37;
-  margin-top: 1.5rem;
+  color: var(--celtic-gold);
   letter-spacing: 1px;
+  margin-top: 1.5rem;
 }
 
 .tagline {
@@ -107,26 +120,26 @@
   padding-top: 0.5rem;
 }
 
-/* 📦 Card Styling */
+/* 📦 Cards */
 .card {
   background-color: rgba(12, 25, 18, 0.85);
-  border: 1px solid #c4b781;
+  border: 1px solid var(--celtic-gold);
   border-radius: 12px;
   padding: 2rem;
   margin: 2rem auto;
   max-width: 800px;
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+  box-shadow: 0 0 15px rgba(186, 150, 83, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 0 25px rgba(186, 150, 83, 0.2);
 }
 
 h2 {
   font-family: 'Inter', sans-serif;
-  color: #c4b781;
+  color: var(--celtic-gold);
   font-size: 1.6rem;
   margin-bottom: 1rem;
 }
@@ -145,19 +158,19 @@ h2 {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
-  background-color: #d4af37;
-  color: #0c1912;
+  background-color: var(--celtic-gold);
+  color: var(--dark-green);
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   text-decoration: none;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 0 10px rgba(186, 150, 83, 0.4);
   transition: all 0.3s ease;
 }
 
 .dashboard-button:hover {
-  background-color: #c4b781;
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+  background-color: #a8843d;
+  box-shadow: 0 0 15px rgba(186, 150, 83, 0.6);
   transform: scale(1.05);
 }
 
@@ -167,5 +180,5 @@ footer {
   padding: 1rem;
   background-color: rgba(12, 25, 18, 0.85);
   color: #888;
-  border-top: 2px solid #c4b781;
+  border-top: 2px solid var(--celtic-gold);
 }
