@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>cAIlte</title>
+  <link rel="icon" type="image/png" href="logo.png" />
   <style>
     body {
       background-color: #0f0f0f;
@@ -14,8 +15,12 @@
     }
     header {
       background: linear-gradient(to right, #00ff99, #00e6ff);
-      padding: 40px;
+      padding: 30px;
       text-align: center;
+    }
+    header img {
+      height: 80px;
+      margin-bottom: 10px;
     }
     header h1 {
       font-family: 'Courier New', monospace;
@@ -46,10 +51,19 @@
       margin-top: 40px;
       font-size: 0.95em;
     }
+    .placeholder {
+      background: #1a1a1a;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
   <header>
+    <!-- Logo Image -->
+    <img src="logo.png" alt="cAIlte Logo" />
     <h1>cAIlte</h1>
     <p>Where signal clarity finds the lost.</p>
   </header>
@@ -64,10 +78,14 @@
     <h2>Live Signal Dashboard</h2>
     <p>Updated hourly. Signals reflect high-confidence setups, active watchlists, and real-time momentum heat.</p>
 
-    <!-- Replace this Tableau embed link with your actual dashboard URL -->
-    <iframe 
-      src="https://public.tableau.com/views/YOUR_DASHBOARD_NAME/YOUR_VIEW_NAME?:embed=y&:display_count=yes">
-    </iframe>
+    <!-- When ready, replace this with your Tableau iframe:
+    <iframe src="https://public.tableau.com/views/YOUR_DASHBOARD_NAME/YOUR_VIEW_NAME?:embed=y&:display_count=yes"></iframe>
+    -->
+
+    <div class="placeholder">
+      <em>Signal dashboard is offline.</em><br>
+      <small>Coming soon once the radar is fully deployed.</small>
+    </div>
 
     <div class="notice">
       ⚠️ You are viewing an experimental build of <strong>cAIlte</strong>.  
