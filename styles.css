@@ -5,6 +5,11 @@
   --text-muted: #a8a28f;
 }
 
+/* 🧩 Layout Reset */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-color: var(--forest-dark);
@@ -68,6 +73,7 @@ body {
   position: absolute;
   top: 2.8rem;
   right: 1rem;
+  min-width: 160px;
   background-color: rgba(12, 25, 18, 0.95);
   border: 1px solid var(--celtic-gold);
   border-radius: 8px;
@@ -135,6 +141,7 @@ body {
   border-radius: 12px;
   padding: 2rem;
   margin: 2rem auto;
+  width: 90%;
   max-width: 800px;
   box-shadow: 0 0 15px rgba(186, 150, 83, 0.1);
   transition: transform 0.3s ease;
@@ -185,11 +192,11 @@ footer {
   border-top: 2px solid var(--celtic-gold);
 }
 
-/* 🌐 EXTENDED FOOTER – Refined Styling */
+/* 🌐 EXTENDED FOOTER */
 .extended-footer {
   background: linear-gradient(to right, #0c1912, #142d1c);
   color: var(--text-muted);
-  padding: 3rem 1rem 2rem;
+  padding: 2.5rem 1rem 1.5rem;
   border-top: 2px solid var(--celtic-gold);
   font-family: 'Inter', sans-serif;
 }
@@ -197,7 +204,7 @@ footer {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
   max-width: 1000px;
   margin: 0 auto;
   text-align: left;
@@ -249,29 +256,4 @@ footer {
   margin-bottom: 0.5rem;
   background-color: #1e2e24;
   color: var(--text-muted);
-  font-size: 0.9rem;
-}
-
-.footer-column button {
-  padding: 0.5rem;
-  background-color: var(--celtic-gold);
-  color: var(--forest-dark);
-  border: none;
-  border-radius: 6px;
-  font-weight: 600;
-  font-size: 0.9rem;
-  cursor: pointer;
-  box-shadow: 0 0 6px rgba(186, 150, 83, 0.3);
-  transition: background 0.3s ease;
-}
-
-.footer-column button:hover {
-  background-color: #a8843d;
-}
-
-.footer-note {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 0.85rem;
-  color: #888;
-}
+  font-size
