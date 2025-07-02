@@ -12,7 +12,7 @@ body {
   text-align: center;
 }
 
-/* 🎥 HERO */
+/* 🎥 Hero Section */
 .hero {
   position: relative;
   height: 60vh;
@@ -38,7 +38,7 @@ body {
   padding: 2.5rem 1rem;
 }
 
-/* 🧭 NAVIGATION */
+/* 🧭 Navigation */
 .nav-wrapper {
   position: absolute;
   top: 1rem;
@@ -96,7 +96,7 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* 🌲 LOGO & TITLE */
+/* 🌲 Logo & Title */
 .logo-left {
   position: absolute;
   top: 1rem;
@@ -127,7 +127,7 @@ body {
   padding-top: 0.5rem;
 }
 
-/* 📦 CARDS */
+/* 📦 Card Sections */
 .card {
   background-color: rgba(12, 25, 18, 0.85);
   border: 1px solid var(--celtic-gold);
@@ -155,7 +155,7 @@ h2 {
   font-size: 1.05rem;
 }
 
-/* 📊 BUTTON */
+/* 📊 Dashboard Button */
 .dashboard-button {
   display: inline-block;
   margin-top: 1rem;
@@ -167,4 +167,102 @@ h2 {
   text-decoration: none;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(186, 150, 83, 0.4);
-  transition: all 0.[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/lzh-yi/Web-Fork-/tree/024b3e55587afdf9f05a677613a75f24e3d1803e/03-CSS%E8%BF%9B%E9%98%B6%2F04-%E5%A6%82%E4%BD%95%E8%AE%A9%E4%B8%80%E4%B8%AA%E5%85%83%E7%B4%A0%E6%B0%B4%E5%B9%B3%E5%9E%82%E7%9B%B4%E5%B1%85%E4%B8%AD%EF%BC%9F.md?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/abhinandan-bhat/news-website/tree/d113187766b00920329fd4a0a1a89d704f6c0bb6/bbc.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "2")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/tamzidoronno/kuetadmissionphp/tree/8768731313fa06cfc2ec483737ed9da0037575a9/realsignup.php?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "3")
+  transition: all 0.3s ease;
+}
+
+.dashboard-button:hover {
+  background-color: #a8843d;
+  box-shadow: 0 0 15px rgba(186, 150, 83, 0.6);
+  transform: scale(1.05);
+}
+
+/* 🕯️ Base Footer */
+footer {
+  padding: 1rem;
+  background-color: rgba(12, 25, 18, 0.85);
+  color: #888;
+  border-top: 2px solid var(--celtic-gold);
+}
+
+/* 🌐 Extended Footer */
+.extended-footer {
+  background-color: rgba(12, 25, 18, 0.95);
+  color: #ccc;
+  padding: 3rem 1rem 2rem;
+  border-top: 2px solid var(--celtic-gold);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.footer-column h3 {
+  color: var(--celtic-gold);
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column p,
+.footer-column ul {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #d3d3d3;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  color: var(--celtic-gold);
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-column form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column input[type="email"] {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  background-color: #1e2e24;
+  color: #ccc;
+}
+
+.footer-column button {
+  padding: 0.5rem;
+  background-color: var(--celtic-gold);
+  color: var(--forest-dark);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-column button:hover {
+  background-color: #a8843d;
+}
+
+.footer-note {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #888;
+}
