@@ -1,54 +1,62 @@
-/* Reset and base */
 body {
   margin: 0;
-  background-color: #0c1912; /* deep forest green */
-  color: #ccc; /* soft body text */
+  background-color: #0c1912; /* forest green */
+  color: #ccc; /* soft light text */
   font-family: 'Merriweather', serif;
   line-height: 1.6;
 }
 
-/* Header */
+/* Header layout */
 header {
   text-align: center;
   padding: 2rem 1rem;
   background: linear-gradient(to right, #0c1912, #142d1c);
-  border-bottom: 2px solid #c4b781; /* elegant gold */
+  border-bottom: 2px solid #c4b781;
+}
+
+.logo-container {
+  margin-bottom: 1rem;
 }
 
 .logo {
   height: 80px;
-  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #d4af37;
 }
 
-.title {
+/* Title styling */
+.site-title {
   font-family: 'Inter', sans-serif;
-  font-size: 2.5rem;
-  color: #d4af37; /* antique gold */
-  margin-bottom: 0.3rem;
+  font-size: 2.8rem;
+  color: #d4af37;
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
 }
 
 .tagline {
   font-style: italic;
   color: #a8a28f;
   font-size: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-/* Content */
+/* Content sections */
 h2 {
   font-family: 'Inter', sans-serif;
   color: #c4b781;
+  font-size: 1.6rem;
   margin-top: 2rem;
-  font-size: 1.5rem;
 }
 
 .body-text {
   color: #d3d3d3;
-  font-size: 1rem;
+  font-size: 1.05rem;
   padding-top: 0.5rem;
 }
 
 .intro, .dashboard {
-  padding: 1.5rem 2rem;
+  padding: 2rem;
   max-width: 800px;
   margin: auto;
 }
