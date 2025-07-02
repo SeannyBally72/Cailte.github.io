@@ -9,41 +9,44 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Inter:wght@500;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <video autoplay muted loop id="bg-video">
-    <source src="forest.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
 
-  <header>
-    <div class="header-content">
+  <!-- 🎥 Hero Section with Forest Video -->
+  <section class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="forest.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay">
       <div class="logo-left">
         <img src="logo.png.jpeg" alt="Cailte Logo" class="logo" />
       </div>
       <h1 class="site-title">Cailte</h1>
+      <p class="tagline">Mapping the unknown. Rooted in nature. Powered by intelligence.</p>
     </div>
-    <p class="tagline">Mapping the unknown. Rooted in nature. Powered by intelligence.</p>
-  </header>
+  </section>
 
-  <main>
-    <section class="intro card">
-      <h2>Welcome to the Celtic Forest Radar System</h2>
-      <p class="body-text">This platform blends environmental data with modern AI to reveal ancient movement patterns, mapping anomalies, and hidden phenomena throughout the Celtic wilderness.</p>
-    </section>
+  <!-- 🌲 Intro Section -->
+  <section class="intro card">
+    <h2>Welcome to the Celtic Forest Radar System</h2>
+    <p class="body-text">This platform blends environmental data with modern AI to reveal ancient movement patterns, mapping anomalies, and hidden phenomena throughout the Celtic wilderness.</p>
+  </section>
 
-    <section class="dashboard card">
-      <h2>Live Data Preview</h2>
-      <p class="body-text">Our interactive dashboard is coming soon. Stay tuned as we fuse deep ecological insight with technological clarity.</p>
-    </section>
+  <!-- 📊 Dashboard Preview Section -->
+  <section class="dashboard card">
+    <h2>Live Data Preview</h2>
+    <p class="body-text">Our interactive dashboard is coming soon. Stay tuned as we fuse deep ecological insight with technological clarity.</p>
+  </section>
 
-    <section class="dashboard-link card">
-      <h2>Explore the Live Dashboard</h2>
-      <p class="body-text">Dive deeper into environmental intelligence using our interactive data portal.</p>
-      <a href="dashboard.html" class="dashboard-button">View Dashboard</a>
-    </section>
-  </main>
+  <!-- 🔗 Dashboard Feature Section -->
+  <section class="dashboard-feature card">
+    <h2>Explore the Live Dashboard</h2>
+    <p class="body-text">Our dashboard reveals real-time forest intelligence—movement patterns, anomaly detection, and environmental signals. This is where Celtic nature meets modern data.</p>
+    <a href="dashboard.html" class="dashboard-button">View Dashboard</a>
+  </section>
 
+  <!-- 🕯️ Footer -->
   <footer>
     <p>&copy; 2025 Cailte. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
