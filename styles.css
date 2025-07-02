@@ -1,36 +1,72 @@
+/* Background Video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+/* Base Styling */
 body {
   margin: 0;
-  background-color: #0c1912; /* forest green */
-  color: #ccc; /* soft light text */
+  background-color: #0c1912;
+  color: #ccc;
   font-family: 'Merriweather', serif;
   line-height: 1.6;
 }
 
-/* Header layout */
+/* Header Layout */
 header {
   text-align: center;
-  padding: 2rem 1rem;
-  background: linear-gradient(to right, #0c1912, #142d1c);
+  padding: 2rem 1rem 1rem;
   border-bottom: 2px solid #c4b781;
+  backdrop-filter: blur(4px);
 }
 
-.logo-container {
-  margin-bottom: 1rem;
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.logo-left {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
 
 .logo {
-  height: 80px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px #d4af37;
+  height: 70px;
+  border-radius: 12px;
+  object-fit: cover;
+  animation: glowLogo 3s ease-in-out infinite alternate;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
 }
 
-/* Title styling */
+@keyframes glowLogo {
+  from { box-shadow: 0 0 5px #d4af37; }
+  to { box-shadow: 0 0 15px #d4af37; }
+}
+
+/* Title Styling */
 .site-title {
   font-family: 'Inter', sans-serif;
   font-size: 2.8rem;
   color: #d4af37;
   letter-spacing: 1px;
-  margin-bottom: 0.4rem;
+  margin: 0 auto;
+}
+
+.site-title:hover {
+  text-shadow: 0 0 10px #d4af37;
+  transition: all 0.3s ease;
 }
 
 .tagline {
@@ -39,33 +75,68 @@ header {
   font-size: 1rem;
   max-width: 600px;
   margin: 0 auto;
+  padding-top: 0.5rem;
 }
 
-/* Content sections */
+/* Card Panels */
+.card {
+  background-color: rgba(12, 25, 18, 0.75);
+  border: 1px solid #c4b781;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+}
+
 h2 {
   font-family: 'Inter', sans-serif;
   color: #c4b781;
   font-size: 1.6rem;
-  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .body-text {
   color: #d3d3d3;
   font-size: 1.05rem;
-  padding-top: 0.5rem;
 }
 
-.intro, .dashboard {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+/* Dashboard Link Button */
+.dashboard-link {
+  text-align: center;
+}
+
+.dashboard-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #d4af37;
+  color: #0c1912;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+  transition: all 0.3s ease;
+}
+
+.dashboard-button:hover {
+  background-color: #c4b781;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+  transform: scale(1.05);
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #0c1912;
+  background-color: rgba(12, 25, 18, 0.85);
   color: #888;
   border-top: 2px solid #c4b781;
 }
