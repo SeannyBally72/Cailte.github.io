@@ -1,15 +1,18 @@
+/* Reset and base */
 body {
   margin: 0;
-  background-color: #0b1e14;
-  color: #ccc;
+  background-color: #0c1912; /* deep forest green */
+  color: #ccc; /* soft body text */
   font-family: 'Merriweather', serif;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
   text-align: center;
   padding: 2rem 1rem;
-  background: linear-gradient(to right, #0b1e14, #142d1c);
-  border-bottom: 2px solid #ffd700;
+  background: linear-gradient(to right, #0c1912, #142d1c);
+  border-bottom: 2px solid #c4b781; /* elegant gold */
 }
 
 .logo {
@@ -17,33 +20,44 @@ header {
   margin-bottom: 1rem;
 }
 
-h1 {
-  font-family: 'Lato', sans-serif;
-  color: #ffd700;
-  margin-bottom: 0.2rem;
+.title {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  color: #d4af37; /* antique gold */
+  margin-bottom: 0.3rem;
 }
 
 .tagline {
   font-style: italic;
-  color: #999;
+  color: #a8a28f;
+  font-size: 1rem;
 }
 
+/* Content */
 h2 {
-  font-family: 'Lato', sans-serif;
-  color: #ffd700;
+  font-family: 'Inter', sans-serif;
+  color: #c4b781;
   margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.body-text {
+  color: #d3d3d3;
+  font-size: 1rem;
+  padding-top: 0.5rem;
 }
 
 .intro, .dashboard {
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   max-width: 800px;
   margin: auto;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #0b1e14;
+  background-color: #0c1912;
   color: #888;
-  border-top: 2px solid #ffd700;
+  border-top: 2px solid #c4b781;
 }
