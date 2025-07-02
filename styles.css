@@ -1,7 +1,7 @@
 /* 🎥 Hero Section */
 .hero {
   position: relative;
-  height: 65vh;
+  height: 60vh;
   overflow: hidden;
   background-color: #0c1912;
 }
@@ -13,23 +13,27 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.15;
-  z-index: -2;
+  opacity: 0.2;
+  z-index: -1;
 }
 
 .hero-overlay {
   position: relative;
   text-align: center;
-  padding: 3rem 1rem;
-  background: linear-gradient(to bottom, rgba(12, 25, 18, 0.8), rgba(12, 25, 18, 0.7));
+  padding: 2rem 1rem;
+  background: rgba(12, 25, 18, 0.65);
 }
 
-/* 🧭 Navigation Icon */
-.nav-icon {
+/* 🧭 Navigation Dropdown */
+.nav-wrapper {
   position: absolute;
   top: 1rem;
   right: 1rem;
+}
+
+.nav-icon {
   cursor: pointer;
+  z-index: 10;
 }
 
 .bar {
@@ -43,6 +47,32 @@
 
 .nav-icon:hover .bar {
   background-color: #c4b781;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  margin-top: 8px;
+  background-color: rgba(12, 25, 18, 0.95);
+  border: 1px solid #c4b781;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.dropdown-menu a {
+  color: #d4af37;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.dropdown-menu a:hover {
+  background-color: #142d1c;
+}
+
+.dropdown-menu.show {
+  display: flex;
 }
 
 /* 🌲 Logo Styling */
@@ -59,12 +89,13 @@
   box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
 }
 
-/* 🔠 Branding Typography */
+/* 🔠 Site Title */
 .site-title {
   font-family: 'Inter', sans-serif;
-  font-size: 3rem;
+  font-size: 3.2rem;
   color: #d4af37;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  letter-spacing: 1px;
 }
 
 .tagline {
