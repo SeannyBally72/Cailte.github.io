@@ -1,22 +1,22 @@
 :root {
   --celtic-gold: #BA9653;
-  --dark-green: #0c1912;
-  --soft-green: #142d1c;
+  --forest-dark: #0c1912;
+  --forest-soft: #142d1c;
 }
 
 body {
   margin: 0;
-  background-color: var(--dark-green);
+  background-color: var(--forest-dark);
   color: #ccc;
   font-family: 'Merriweather', serif;
-  line-height: 1.6;
+  text-align: center;
 }
 
-/* 🎥 Hero */
+/* 🎥 VIDEO BACKGROUND */
 .hero {
   position: relative;
   height: 60vh;
-  background-color: var(--dark-green);
+  background-color: var(--forest-dark);
   overflow: hidden;
 }
 
@@ -27,18 +27,17 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.2;
+  opacity: 0.25;
   z-index: -1;
 }
 
 .hero-overlay {
   position: relative;
-  text-align: center;
+  background-color: rgba(12, 25, 18, 0.65);
   padding: 2.5rem 1rem;
-  background: rgba(12, 25, 18, 0.65);
 }
 
-/* 🧭 Menu Icon & Dropdown */
+/* 🧭 HAMBURGER & MENU */
 .nav-wrapper {
   position: absolute;
   top: 1rem;
@@ -65,11 +64,15 @@ body {
 .dropdown-menu {
   display: none;
   flex-direction: column;
-  margin-top: 8px;
+  position: absolute;
+  top: 2.8rem;
+  right: 1rem;
   background-color: rgba(12, 25, 18, 0.95);
   border: 1px solid var(--celtic-gold);
   border-radius: 8px;
   padding: 0.5rem;
+  animation: fadeIn 0.3s ease forwards;
+  z-index: 10;
 }
 
 .dropdown-menu.show {
@@ -79,16 +82,21 @@ body {
 .dropdown-menu a {
   color: var(--celtic-gold);
   text-decoration: none;
-  padding: 0.5rem;
   font-family: 'Inter', sans-serif;
-  font-weight: 500;
+  padding: 0.5rem 1rem;
 }
 
 .dropdown-menu a:hover {
-  background-color: var(--soft-green);
+  background-color: var(--forest-soft);
+  border-radius: 4px;
 }
 
-/* 🌲 Logo */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🌲 LOGO */
 .logo-left {
   position: absolute;
   top: 1rem;
@@ -102,13 +110,13 @@ body {
   box-shadow: 0 0 12px rgba(186, 150, 83, 0.5);
 }
 
-/* 🌟 Branding */
+/* 🔠 TITLE */
 .site-title {
   font-family: 'Inter', sans-serif;
-  font-size: 3.2rem;
+  font-size: 3rem;
   color: var(--celtic-gold);
   letter-spacing: 1px;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .tagline {
@@ -120,7 +128,7 @@ body {
   padding-top: 0.5rem;
 }
 
-/* 📦 Cards */
+/* 📦 CARDS */
 .card {
   background-color: rgba(12, 25, 18, 0.85);
   border: 1px solid var(--celtic-gold);
@@ -129,12 +137,11 @@ body {
   margin: 2rem auto;
   max-width: 800px;
   box-shadow: 0 0 15px rgba(186, 150, 83, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 25px rgba(186, 150, 83, 0.2);
 }
 
 h2 {
@@ -149,17 +156,13 @@ h2 {
   font-size: 1.05rem;
 }
 
-/* 📊 Dashboard Button */
-.dashboard-feature {
-  text-align: center;
-}
-
+/* 📊 DASHBOARD BUTTON */
 .dashboard-button {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
   background-color: var(--celtic-gold);
-  color: var(--dark-green);
+  color: var(--forest-dark);
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   text-decoration: none;
@@ -174,9 +177,8 @@ h2 {
   transform: scale(1.05);
 }
 
-/* 🕯️ Footer */
+/* 🕯️ FOOTER */
 footer {
-  text-align: center;
   padding: 1rem;
   background-color: rgba(12, 25, 18, 0.85);
   color: #888;
