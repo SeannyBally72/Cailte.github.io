@@ -12,7 +12,7 @@ body {
   text-align: center;
 }
 
-/* 🎥 Hero Section */
+/* 🎥 HERO SECTION */
 .hero {
   position: relative;
   height: 60vh;
@@ -38,7 +38,7 @@ body {
   padding: 2.5rem 1rem;
 }
 
-/* 🧭 Navigation */
+/* 🧭 NAVIGATION */
 .nav-wrapper {
   position: absolute;
   top: 1rem;
@@ -96,7 +96,7 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* 🌲 Logo & Title */
+/* 🌲 LOGO & TITLE */
 .logo-left {
   position: absolute;
   top: 1rem;
@@ -127,7 +127,7 @@ body {
   padding-top: 0.5rem;
 }
 
-/* 📦 Card Sections */
+/* 📦 CARD SECTIONS */
 .card {
   background-color: rgba(12, 25, 18, 0.85);
   border: 1px solid var(--celtic-gold);
@@ -155,7 +155,7 @@ h2 {
   font-size: 1.05rem;
 }
 
-/* 📊 Dashboard Button */
+/* 📊 DASHBOARD BUTTON */
 .dashboard-button {
   display: inline-block;
   margin-top: 1rem;
@@ -184,9 +184,9 @@ footer {
   border-top: 2px solid var(--celtic-gold);
 }
 
-/* 🌐 Extended Footer */
+/* 🌐 Extended Footer – Refined Styling */
 .extended-footer {
-  background-color: rgba(12, 25, 18, 0.95);
+  background: linear-gradient(to right, #0c1912, #142d1c);
   color: #ccc;
   padding: 3rem 1rem 2rem;
   border-top: 2px solid var(--celtic-gold);
@@ -194,7 +194,7 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
@@ -204,19 +204,21 @@ footer {
 .footer-column h3 {
   color: var(--celtic-gold);
   font-family: 'Inter', sans-serif;
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
 }
 
 .footer-column p,
 .footer-column ul {
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.6;
   color: #d3d3d3;
 }
 
 .footer-column ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-column ul li {
@@ -230,6 +232,7 @@ footer {
 
 .footer-column ul li a:hover {
   text-decoration: underline;
+  color: #a8843d;
 }
 
 .footer-column form {
@@ -244,6 +247,8 @@ footer {
   margin-bottom: 0.5rem;
   background-color: #1e2e24;
   color: #ccc;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
 }
 
 .footer-column button {
@@ -253,7 +258,11 @@ footer {
   border: none;
   border-radius: 6px;
   font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
   cursor: pointer;
+  box-shadow: 0 0 6px rgba(186, 150, 83, 0.3);
+  transition: background 0.3s ease;
 }
 
 .footer-column button:hover {
@@ -265,4 +274,5 @@ footer {
   margin-top: 2rem;
   font-size: 0.85rem;
   color: #888;
+  font-family: 'Inter', sans-serif;
 }
