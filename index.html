@@ -17,7 +17,7 @@
     </video>
     <div class="hero-overlay">
 
-      <!-- 🧭 NAV MENU -->
+      <!-- 🧭 NAVIGATION -->
       <div class="nav-wrapper">
         <div class="nav-icon" onclick="toggleMenu()">
           <div class="bar"></div>
@@ -31,7 +31,7 @@
         </div>
       </div>
 
-      <!-- 🌲 LOGO & BRANDING -->
+      <!-- 🌲 BRANDING -->
       <div class="logo-left">
         <img src="logo.png.png" alt="Cailte Logo" class="logo" />
       </div>
@@ -59,11 +59,37 @@
     </section>
   </main>
 
-  <!-- 🕯️ FOOTER -->
-  <footer>
-    <p>&copy; 2025 Cailte. All rights reserved.</p>
+  <!-- 🌐 EXTENDED FOOTER -->
+  <footer class="extended-footer">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h3>About Cailte</h3>
+        <p>We fuse ecological intelligence with modern technology to illuminate the hidden rhythms of the Celtic wilderness.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Stay Connected</h3>
+        <form>
+          <input type="email" placeholder="Your email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p>Email: info@cailte.com<br />Phone: +353 123 4567</p>
+      </div>
+    </div>
+    <p class="footer-note">&copy; 2025 Cailte. All rights reserved.</p>
   </footer>
 
+  <!-- 📜 MENU SCRIPT -->
   <script>
     function toggleMenu() {
       document.getElementById("dropdown-menu").classList.toggle("show");
