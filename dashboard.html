@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cAIlte Forecast Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Inter:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- 🎥 HERO SECTION -->
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="forest.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay">
+
+      <!-- 🧭 NAVIGATION -->
+      <div class="nav-wrapper">
+        <div class="nav-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div id="dropdown-menu" class="dropdown-menu">
+          <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
+          <a href="#">Settings</a>
+        </div>
+      </div>
+
+      <!-- 🌲 BRANDING -->
+      <div class="logo-left">
+        <img src="logo.png.png" alt="cAIlte Logo" class="logo" />
+      </div>
+      <h1 class="site-title">cAIlte Dashboard</h1>
+      <p class="tagline">Radar forecasts and signal intelligence from the Celtic system.</p>
+    </div>
+  </section>
+
+  <!-- 📊 EMBEDDED DASHBOARD -->
+  <main>
+    <section class="card">
+      <h2>Forecast Intelligence Console</h2>
+      <p class="body-text">Powered by Looker Studio, this dashboard visualizes real-time forest signals, market forecasts, and radar breakdowns from the Celtic AI system.</p>
+      <div style="text-align:center;">
+        <iframe width="100%" height="600" src="https://lookerstudio.google.com/embed/reporting/3bb66025-fdaa-4fa5-9763-1c34c729de7c/page/SrFQF" frameborder="0" style="border:0;" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- 🌐 EXTENDED FOOTER -->
+  <footer class="extended-footer">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h3>About cAIlte</h3>
+        <p>We fuse ecological intelligence with modern technology to illuminate the hidden rhythms of the Celtic wilderness.</p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Stay Connected</h3>
+        <form>
+          <input type="email" placeholder="Your email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p>Email: info@cailte.com<br />Phone: +353 123 4567</p>
+      </div>
+    </div>
+    <p class="footer-note">&copy; 2025 cAIlte. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("dropdown-menu").classList.toggle("show");
+    }
+  </script>
+
+</body>
+</html>
