@@ -161,6 +161,7 @@ h2 {
 .body-text {
   color: var(--text-muted);
   font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 /* 📊 BUTTON */
@@ -256,4 +257,22 @@ footer {
   margin-bottom: 0.5rem;
   background-color: #1e2e24;
   color: var(--text-muted);
-  font-size
+  font-size: 0.9rem;
+}
+
+/* 🌲 EMBEDDED DASHBOARD STYLING */
+iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 600px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(186, 150, 83, 0.2);
+  background-color: rgba(12, 25, 18, 0.85);
+  margin-top: 1rem;
+  transition: transform 0.3s ease;
+}
+
+iframe:hover {
+  transform: scale(1.01);
+}
