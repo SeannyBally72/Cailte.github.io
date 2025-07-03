@@ -260,19 +260,15 @@ footer {
   font-size: 0.9rem;
 }
 
-/* 📊 DASHBOARD EMBED STYLING */
+/* 📊 DASHBOARD EMBED STYLING (Enhanced) */
 iframe {
   width: 100%;
-  max-width: 800px;
-  height: 600px;
+  max-width: 1000px;
+  height: 90vh;
   border: none;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(186, 150, 83, 0.2);
+  box-shadow: 0 4px 20px rgba(186, 150, 83, 0.25);
   background-color: rgba(12, 25, 18, 0.85);
-  margin-top: 1rem;
-  transition: transform 0.3s ease;
-}
-
-iframe:hover {
-  transform: scale(1.01);
+  margin: 1rem auto;
+  display: block;
 }
