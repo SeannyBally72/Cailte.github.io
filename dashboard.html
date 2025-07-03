@@ -10,15 +10,19 @@
 </head>
 <body>
 
-  <!-- 🎥 HERO (slim height) -->
+  <!-- 🌲 SLIMMED HERO HEADER -->
   <section class="hero" style="height:30vh;">
     <video autoplay muted loop playsinline class="hero-video">
       <source src="forest.mp4" type="video/mp4" />
     </video>
     <div class="hero-overlay">
+
+      <!-- 🧭 NAVIGATION -->
       <div class="nav-wrapper">
         <div class="nav-icon" onclick="toggleMenu()">
-          <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
         <div id="dropdown-menu" class="dropdown-menu">
           <a href="index.html">Home</a>
@@ -27,6 +31,7 @@
         </div>
       </div>
 
+      <!-- 🌿 BRANDING -->
       <div class="logo-left">
         <img src="logo.png.png" alt="cAIlte Logo" class="logo" />
       </div>
@@ -35,18 +40,27 @@
     </div>
   </section>
 
-  <!-- 📊 DASHBOARD SECTION -->
+  <!-- 📊 DASHBOARD CONTENT -->
   <main>
+    <div style="text-align:center;">
+      <iframe
+        width="100%"
+        height="600"
+        src="https://lookerstudio.google.com/embed/reporting/3bb66025-fdaa-4fa5-9763-1c34c729de7c/page/SrFQF"
+        frameborder="0"
+        style="border:0;"
+        allowfullscreen
+        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+      </iframe>
+    </div>
+
     <section class="card">
-      <div style="text-align:center;">
-        <iframe width="100%" height="600" src="https://lookerstudio.google.com/embed/reporting/3bb66025-fdaa-4fa5-9763-1c34c729de7c/page/SrFQF" frameborder="0" style="border:0;" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
-      </div>
       <h2>Forecast Intelligence Console</h2>
-      <p class="body-text">Powered by Looker Studio, this dashboard visualizes real-time forest signals, forecast entries, and radar breakdowns from the Celtic AI forecasting system.</p>
+      <p class="body-text">Powered by Looker Studio, this dashboard visualizes real-time forest signals, forecast entries, and radar breakdowns from the Celtic AI system.</p>
     </section>
   </main>
 
-  <!-- 🌐 FOOTER -->
+  <!-- 🌐 EXTENDED FOOTER -->
   <footer class="extended-footer">
     <div class="footer-grid">
       <div class="footer-column">
